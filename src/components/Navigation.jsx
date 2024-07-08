@@ -9,7 +9,7 @@ const Navigation = () => {
     "programming gives headaches 😵",
   ];
   return (
-    <div className="text-white flex h-12 bg-black py-4 text-lg font-light">
+    <div className="flex h-12 bg-black py-4 text-lg font-light text-white">
       <div className="flex-1">
         <span className="text-lime">{"< "}</span>
         <FlipWords words={words} className="text-white" />

@@ -20,3 +20,12 @@ body {
     text-wrap: balance;
   }
 }
+
+.magicpattern {
+  width: 50%;
+  height: 50%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: repeat;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3ClinearGradient id=%22b%22 gradientTransform=%22rotate(-45 .5 .5)%22%3E%3Cstop offset=%220%25%22 stop-color=%22%2385FFBD%22%2F%3E%3Cstop offset=%22100%25%22 stop-color=%22%23FFFB7D%22%2F%3E%3C%2FlinearGradient%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M861.5 627.5Q851 755 737.5 819t-214-9q-100.5-73-230-69.5T183 622q19-122 81-185.5t74.5-230Q351 40 489 74.5T654 239q27 130 122.5 195.5t85 193Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22url(%23b)%22 d=%22M861.5 627.5Q851 755 737.5 819t-214-9q-100.5-73-230-69.5T183 622q19-122 81-185.5t74.5-230Q351 40 489 74.5T654 239q27 130 122.5 195.5t85 193Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+}
