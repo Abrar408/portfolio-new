@@ -3,6 +3,7 @@ import linkedInIcon from "../../public/icons/linked_in.svg";
 import githubIcon from "../../public/icons/github.svg";
 import emailIcon from "../../public/icons/email.svg";
 import Link from "next/link";
+import { WobbleCard } from "./ui/Wobble_card";
 
 const Hero = () => {
   return (
@@ -17,7 +18,7 @@ const Hero = () => {
           seasoned backend developer with a flair for creating stunning
           frontends.
         </p>
-        <div className="flex space-x-9">
+        <div className="flex space-x-9 mt-2">
           <Link href={"/"}>
             <Image
               src={linkedInIcon}
@@ -48,7 +49,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="flex flex-1 items-center justify-center">
-        <div className="h-96 w-96 rounded-full bg-lime"></div>
+        <WobbleCard/>
       </div>
     </div>
   );
