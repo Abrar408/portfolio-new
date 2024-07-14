@@ -12,7 +12,7 @@ const Hero = () => {
         <h1 className="text-[80px] font-bold text-white">ABRAR ALI</h1>
         <p className="text-[50px] text-white">
           {`full-stack`}
-          <span className="font-bold text-lime">/</span>backend engineer
+          <span className="font-bold text-green">/</span>backend engineer
         </p>
         <p className="justify-center text-lg text-light_gray">
           seasoned backend developer with a flair for creating stunning
