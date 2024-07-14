@@ -4,14 +4,14 @@ import { FlipWords } from "./ui/Flip_words";
 
 const Navigation = () => {
   const words = [
-    "programming is an art 🎨",
-    "programming is beautiful 😍",
-    "programming gives headaches 😵",
+    "is an art 🎨",
+    "is beautiful 😍",
+    "gives headaches 😵",
   ];
   return (
     <div className="flex h-12 py-4 text-lg font-light text-white">
       <div className="flex-1">
-        <span className="text-lime">{"< "}</span>
+        <span className="text-lime">{"< programming"}</span>
         <FlipWords words={words} className="text-white" />
         <span className="text-lime">{">"}</span>
       </div>
