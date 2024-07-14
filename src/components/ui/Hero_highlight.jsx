@@ -3,19 +3,11 @@ import { cn } from "@/utils/cn";
 import { useMotionValue, motion, useMotionTemplate } from "framer-motion";
 import React from "react";
 
-export const HeroHighlight = ({
-  children,
-  className,
-  containerClassName,
-}) => {
+export const HeroHighlight = ({ children, className, containerClassName }) => {
   let mouseX = useMotionValue(0);
   let mouseY = useMotionValue(0);
 
-  function handleMouseMove({
-    currentTarget,
-    clientX,
-    clientY,
-  }) {
+  function handleMouseMove({ currentTarget, clientX, clientY }) {
     if (!currentTarget) return;
     let { left, top } = currentTarget.getBoundingClientRect();
 
@@ -25,14 +17,14 @@ export const HeroHighlight = ({
   return (
     <div
       className={cn(
-        "relative h-[40rem] flex items-center bg-white dark:bg-black justify-center w-full group",
-        containerClassName
+        "group relative flex h-[40rem] w-full items-center justify-center bg-white dark:bg-black",
+        containerClassName,
       )}
       onMouseMove={handleMouseMove}
     >
-      <div className="absolute inset-0 bg-dot-thick-neutral-300 dark:bg-dot-thick-neutral-800  pointer-events-none" />
+      <div className="bg-dot-thick-neutral-300 dark:bg-dot-thick-neutral-800 pointer-events-none absolute inset-0" />
       <motion.div
-        className="pointer-events-none bg-dot-thick-indigo-500 dark:bg-dot-thick-indigo-500   absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100"
+        className="bg-dot-thick-indigo-500 dark:bg-dot-thick-indigo-500 pointer-events-none absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100"
         style={{
           WebkitMaskImage: useMotionTemplate`
             radial-gradient(
@@ -56,10 +48,7 @@ export const HeroHighlight = ({
   );
 };
 
-export const Highlight = ({
-  children,
-  className,
-}) => {
+export const Highlight = ({ children, className }) => {
   return (
     <motion.span
       initial={{
@@ -79,8 +68,8 @@ export const Highlight = ({
         display: "inline",
       }}
       className={cn(
-        `relative inline-block pb-1   px-1 rounded-lg bg-gradient-to-r from-lime to-green dark:from-indigo-500 dark:to-purple-500`,
-        className
+        `relative inline-block rounded-lg bg-gradient-to-r from-lime to-green px-1 pb-1 dark:from-indigo-500 dark:to-purple-500`,
+        className,
       )}
     >
       {children}

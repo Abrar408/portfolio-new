@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const TechStack = () => {
-  return (
-    <div>TechStack</div>
-  )
-}
+  return <div>TechStack</div>;
+};
 
-export default TechStack
+export default TechStack;

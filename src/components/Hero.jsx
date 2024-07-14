@@ -18,7 +18,7 @@ const Hero = () => {
           seasoned backend developer with a flair for creating stunning
           frontends.
         </p>
-        <div className="flex space-x-9 mt-2">
+        <div className="mt-2 flex space-x-9">
           <Link href={"/"}>
             <Image
               src={linkedInIcon}
@@ -49,7 +49,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="flex flex-1 items-center justify-center">
-        <WobbleCard/>
+        <WobbleCard />
       </div>
     </div>
   );
