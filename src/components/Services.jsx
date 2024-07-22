@@ -1,47 +1,54 @@
 import { HoverEffect } from "./ui/Card_hover_effect";
+import development from "../../public/development.png";
+import seo from "../../public/seo.png";
+import payment from "../../public/payment.png";
+import bug from "../../public/bug1.png";
+import database from "../../public/database.png";
 
 const services = [
   {
+    image: development,
     title: "Website Development",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias officia asperiores vero quisquam, aut recusandae laboriosam minima quis tenetur. Omnis?",
+      "Crafting custom, responsive, and user-friendly websites that cater to your unique business needs",
     link: "",
   },
   {
-    title: "Basic SEO",
+    image: seo,
+    title: "SEO",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias officia asperiores vero quisquam, aut recusandae laboriosam minima quis tenetur. Omnis?",
+      "Enhancing your website's visibility with fundamental SEO practices to improve search engine rankings.",
     link: "",
   },
   {
-    title: "Stripe Integration",
+    image: payment,
+    title: "Payment Gateway Integration",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias officia asperiores vero quisquam, aut recusandae laboriosam minima quis tenetur. Omnis?",
+      "Seamlessly incorporating secure payment solutions to ensure smooth and reliable transactions.",
     link: "",
   },
   {
+    image: bug,
     title: "Bug Fixes",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias officia asperiores vero quisquam, aut recusandae laboriosam minima quis tenetur. Omnis?",
+      "Identifying and resolving issues to ensure your website runs smoothly and efficiently.",
     link: "",
   },
   {
+    image: database,
     title: "Database Management",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias officia asperiores vero quisquam, aut recusandae laboriosam minima quis tenetur. Omnis?",
-    link: "",
-  },
-  {
-    title: "Code Review",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias officia asperiores vero quisquam, aut recusandae laboriosam minima quis tenetur. Omnis?",
+      "Efficiently organizing, managing, and maintaining your databases to ensure data integrity and accessibility.",
     link: "",
   },
 ];
+
 const Services = () => {
   return (
-    <div className="container flex min-h-[100vh] flex-col items-center justify-center text-white">
-      <h2 className="my-20 text-[60px]">Services</h2>
+    <div className="container flex min-h-[100vh] flex-col items-start justify-center text-white">
+      <h2 className="-mb-20 text-[140px] font-bold text-white group-hover:-my-10">
+        Services<span className="text-web_red">.</span>
+      </h2>
       <HoverEffect items={services} />
     </div>
   );

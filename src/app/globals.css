@@ -12,7 +12,7 @@
 }
 
 body {
-  background-color: #090A0B;
+  background-color: #0d1821;
 }
 
 @layer utilities {
@@ -28,90 +28,4 @@ body {
   background-position: center center;
   background-repeat: repeat;
   background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3ClinearGradient id=%22b%22 gradientTransform=%22rotate(-45 .5 .5)%22%3E%3Cstop offset=%220%25%22 stop-color=%22%2385FFBD%22%2F%3E%3Cstop offset=%22100%25%22 stop-color=%22%23FFFB7D%22%2F%3E%3C%2FlinearGradient%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M861.5 627.5Q851 755 737.5 819t-214-9q-100.5-73-230-69.5T183 622q19-122 81-185.5t74.5-230Q351 40 489 74.5T654 239q27 130 122.5 195.5t85 193Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22url(%23b)%22 d=%22M861.5 627.5Q851 755 737.5 819t-214-9q-100.5-73-230-69.5T183 622q19-122 81-185.5t74.5-230Q351 40 489 74.5T654 239q27 130 122.5 195.5t85 193Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
-}
-
-.spider {
-  position: relative;
-  width: 50px;
-  height: 50px;
-  background-color: white;
-  border-radius: 50%;
-}
-
-.spider::before {
-  content: '';
-  position: absolute;
-  top: -20px;
-  left: 50%;
-  width: 2px;
-  height: 20px;
-  background-color: white;
-  transform: translateX(-50%);
-}
-
-.spider::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 80px;
-  height: 80px;
-  background: radial-gradient(circle, transparent 45px, white 45px);
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.leg {
-  position: absolute;
-  width: 70px;
-  height: 2px;
-  background-color: white;
-}
-
-.leg:nth-child(1) {
-  top: 10%;
-  left: 50%;
-  transform: rotate(45deg);
-}
-
-.leg:nth-child(2) {
-  top: 10%;
-  left: 50%;
-  transform: rotate(135deg);
-}
-
-.leg:nth-child(3) {
-  top: 30%;
-  left: 50%;
-  transform: rotate(30deg);
-}
-
-.leg:nth-child(4) {
-  top: 30%;
-  left: 50%;
-  transform: rotate(150deg);
-}
-
-.leg:nth-child(5) {
-  top: 50%;
-  left: 50%;
-  transform: rotate(15deg);
-}
-
-.leg:nth-child(6) {
-  top: 50%;
-  left: 50%;
-  transform: rotate(165deg);
-}
-
-.leg:nth-child(7) {
-  top: 70%;
-  left: 50%;
-  transform: rotate(0deg);
-}
-
-.leg:nth-child(8) {
-  top: 70%;
-  left: 50%;
-  transform: rotate(180deg);
 }
