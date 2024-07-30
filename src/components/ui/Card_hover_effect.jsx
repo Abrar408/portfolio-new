@@ -42,13 +42,15 @@ export const HoverEffect = ({ items, className }) => {
             )}
           </AnimatePresence>
           <Card>
-            <Image
-              src={item.image}
-              alt={item.title}
-              width={200}
-              height={200}
-              className="mx-auto max-h-[150px]"
-            />
+            <div className="w-full rounded-lg bg-web_light_gray">
+              <Image
+                src={item.image}
+                alt={item.title}
+                width={200}
+                height={200}
+                className="mx-auto max-h-[150px]"
+              />
+            </div>
             <CardTitle>{item.title}</CardTitle>
             <CardDescription>{item.description}</CardDescription>
           </Card>
