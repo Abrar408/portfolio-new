@@ -7,10 +7,15 @@ const Navigation = () => {
   return (
     <div className="flex h-12 py-4 text-lg font-light text-white">
       <div className="flex-1">
-        <span className="text-white">{"<"}</span>
-        <span className="text-web_green"> programming</span>
+        {/* <span className="font-bold text-web_red">{"<"}</span> */}
+        {/* <div className="flex items-center rounded-xl bg-web_red px-2">
+          programming
+        </div> */}
+        <span className="items-center rounded-lg bg-web_red px-2 pb-1 font-bold leading-[1px]">
+          programming
+        </span>
         <FlipWords words={words} className="text-white" />
-        <span className="text-white">{">"}</span>
+        {/* <span className="font-bold text-web_red">{">"}</span> */}
       </div>
       <div className="flex items-center space-x-10">
         <Link href={"/"}>Home</Link>

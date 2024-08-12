@@ -24,12 +24,12 @@ export const WobbleCard = ({ children, containerClassName, className }) => {
       }}
       style={{
         transform: isHovering
-          ? `translate3d(${mousePosition.x}px, ${mousePosition.y}px, 0) scale3d(1, 1, 1)`
+          ? `translate3d(${10 * mousePosition.x}px, ${10 * mousePosition.y}px, 0) scale3d(1, 1, 1)`
           : "translate3d(0px, 0px, 0) scale3d(1, 1, 1)",
         transition: "transform 0.1s ease-out",
       }}
       className={cn(
-        "relative mx-auto h-96 w-96 overflow-hidden rounded-full bg-web_yellow",
+        `relative mx-auto h-[450px] w-[450px] overflow-hidden rounded-full ${isHovering ? "bg-white/90" : "bg-white"}`,
         containerClassName,
       )}
     >
@@ -43,13 +43,13 @@ export const WobbleCard = ({ children, containerClassName, className }) => {
         <motion.div
           style={{
             transform: isHovering
-              ? `translate3d(${-mousePosition.x}px, ${-mousePosition.y}px, 0) scale3d(1.03, 1.03, 1)`
+              ? `translate3d(${-mousePosition.x}px, ${-mousePosition.y}px, 0) scale3d(1.0, 1.0, 1)`
               : "translate3d(0px, 0px, 0) scale3d(1, 1, 1)",
             transition: "transform 0.1s ease-out",
           }}
-          className={cn("h-full px-4 py-20 sm:px-10", className)}
+          className={cn("h-full pt-10 sm:px-10", className)}
         >
-          <Noise />
+          {/* <Noise /> */}
           {children}
         </motion.div>
       </div>

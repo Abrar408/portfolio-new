@@ -1,9 +1,9 @@
 import { HoverEffect } from "./ui/Card_hover_effect";
-import development from "../../public/development.png";
-import seo from "../../public/seo.png";
-import payment from "../../public/payment.png";
-import bug from "../../public/bug1.png";
-import database from "../../public/database.png";
+import development from "../../public/services/development.png";
+import seo from "../../public/services/seo.png";
+import payment from "../../public/services/payment.png";
+import bug from "../../public/services/bug1.png";
+import database from "../../public/services/database.png";
 
 const services = [
   {
